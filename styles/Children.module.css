@@ -1,0 +1,93 @@
+/* Float four columns side by side */
+
+.column1 {
+    float: left;
+    width: 60%;
+    margin-top: 3%;
+    padding: 0 20px;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+    margin-top: 3%;
+    padding: 0 20px;
+}
+
+.h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.Link {
+    float: right;
+    align-items: center;
+}
+
+.List {
+    text-align: left;
+}
+
+.Right {
+    align-items: right;
+}
+
+.color {
+    color: #F9663A;
+}
+
+.show {
+    margin-top: 10%;
+}
+
+.kotak {
+    width: 50px;
+    height: 50px;
+    background: #FF7900;
+    padding-top: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column1 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
