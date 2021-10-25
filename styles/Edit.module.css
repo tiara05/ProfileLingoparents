@@ -1,0 +1,113 @@
+/* Float four columns side by side */
+
+.column1 {
+    float: left;
+    width: 60%;
+    margin-top: 3%;
+    padding: 0 20px;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+    margin-top: 3%;
+    padding: 0 20px;
+}
+
+.h3 {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.Link {
+    float: right;
+    align-items: center;
+}
+
+.List {
+    text-align: left;
+}
+
+.Right {
+    align-items: right;
+}
+
+.color {
+    color: #F9663A;
+}
+
+.show {
+    margin-top: 10%;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column1 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.margin {
+    margin-top: 4%;
+}
+
+.tombol {
+    background-color: #F9663A;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    margin-top: 50px;
+    border: transparent;
+}
+
+.tombol2 {
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000000;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid #F9663A;
+    margin-left: 20px;
+}

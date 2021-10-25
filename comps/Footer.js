@@ -20,6 +20,7 @@ const Footer = () => {
               <a className="nav-link" href="#">Privacy Policy</a>
             </li>
           </ul>
+          <label>© 2021 LingoTalk Language Learning</label>
         </div>
       </nav>
     </footer>
